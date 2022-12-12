@@ -1,0 +1,157 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+.sidenav {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color:#f8f9fa;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+  }
+  
+.sidenav a {
+    margin-left: 10px;
+    padding: 20px 8px 10px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+ 
+.sidenav a:hover {
+    color: #030303;
+  } 
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(187, 64, 64);
+  }
+.navbar{
+    padding-left:80px;
+    width: 100%;
+}
+.conf{
+    background-color: rgb(246, 246, 246);
+    margin-top: 50px;
+    height: 50px;
+}
+.btn:hover{
+    background-color:tomato;
+    border: none;
+}
+.main
+{   width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.cards{
+    z-index: 0;
+    padding-left: 90px;
+    width:65%;
+    /* background-color: rgb(218, 218, 218); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* z-index: -1; */
+}
+.card{
+    width: 300px;
+    height: 280px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 15px;
+    z-index: 0;
+}
+.card:hover{
+ box-shadow: 4px 4px 5px #333;
+}
+.CardHead{
+    text-align: center;
+    font-weight: bolder ;
+    margin-bottom: 25px;
+}
+.CardHead i{
+        font-size: larger;
+        padding: 5px;
+        position: relative;
+        left: 120px;
+    }
+.table {
+    font-size: large;
+    line-height: 30px;
+   
+}
+tbody, td, tfoot, th, thead, tr{
+    border-style: none;
+}
+tr:nth-child(odd) {
+    font-weight: bolder;
+}
+.infocard{
+    z-index: 0;
+    width: 50%;
+    background-color:#fff;
+    border-radius: 5px;
+}
+.infocard:hover{
+    box-shadow: -4px 4px 15px #333;
+  
+}
+.header{
+    font-size: larger;
+    margin-left: 25px;
+    margin-top: 20px;
+   
+}
+.maincontent
+{
+    margin-left: 25px;
+    margin-top: 40px;
+    font-size: larger;
+}
+.fa-star-o:hover{
+    color: gold;
+    overflow: hidden;
+}
+.fa-ellipsis-v{
+    margin-right: 25px;
+}
+.maincontent table{
+        margin-left: 25px;
+        margin-right: auto;
+        /* font-size: 20px; */
+        height: 100%;
+        width:80%;
+        table-layout: fixed;
+
+}
+.maincontent table td{
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding: 10px;
+   
+}
+
+.maincontent h6{
+  
+    font-size: 20px;
+    font-weight: bolder;
+    color: tomato;
+    
+}
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }  
